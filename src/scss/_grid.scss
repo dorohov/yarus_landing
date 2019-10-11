@@ -1,0 +1,99 @@
+.container {
+    max-width: #{1420px + 60px};
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 70px;
+    &.is--white {
+        color: #fff;
+    }
+    &__text {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 127.25%;
+    }
+    &__sub {
+        padding-top: 20px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 127.25%;
+    }
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border: 3px solid $c-primary;
+    padding: 25px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    white-space: nowrap;
+    color: #fff;
+    background: none;
+    position: relative;
+    transition: .4s all ease;
+    position: relative;
+    &:hover {
+        color: $c-primary;
+        &::after {
+            width: 0%;
+        }
+    }
+    &.is--bg {
+        background: #fff;
+    }
+    span {
+        position: relative;
+        z-index: 100;
+    }
+    &::after {
+        content: '';
+        height: calc(100% + 2px);
+        width: calc(100% + 2px);
+        background: $c-primary;
+        left: -1px;
+        top: -1px;
+        position: absolute;
+        transition: .4s all ease;
+    }
+}
+
+.page {
+    padding: 100px 0;
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        &__text {
+            font-size: 36px;
+        }
+    }
+    .btn {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        margin-bottom: 40px;
+        &__text {
+            font-size: 18px;
+        }
+        &__sub {
+            font-size: 16px;
+            padding-top: 10px;
+        }
+    }
+    .page {
+        padding: 50px 0;
+    }
+    .btn {
+        padding: 10px 20px;
+    }
+}

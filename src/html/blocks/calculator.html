@@ -1,0 +1,52 @@
+<div class="calc">
+    <div class="calc__inner container">
+        <div class="heading is--white">
+            <div class="heading__text">Калькулятор стоимости ремонта</div>
+            <div class="heading__sub">Заполните поля формы, чтобы рассчитать стоимость <br> ремонта вашего помещения</div>
+        </div>
+        <div class="calc__wrap">
+            <div class="calc__wrap__left">
+                <div class="calc__wrap__title">Тип жилья</div>
+                <div class="calc__wrap__left__inputs">
+                    <div class="calc__wrap__left__inputs__block form-radio">
+                        <input type="radio" name="calc_form1" id="calc_form11" value="calc_form11" checked>
+                        <label for="calc_form11" class="is--box"><span></span></label>
+                        <label for="calc_form11" class="is--text">Новостройка</label>
+                    </div>
+                    <div class="calc__wrap__left__inputs__block form-radio">
+                        <input type="radio" name="calc_form1" id="calc_form12" value="calc_form12">
+                        <label for="calc_form12" class="is--box"><span></span></label>
+                        <label for="calc_form12" class="is--text">Вторичное жилье</label>
+                    </div>
+                    <div class="calc__wrap__left__inputs__block form-radio">
+                        <input type="radio" name="calc_form1" id="calc_form13" value="calc_form13">
+                        <label for="calc_form13" class="is--box"><span></span></label>
+                        <label for="calc_form13" class="is--text">Загородный дом</label>
+                    </div>
+                </div>
+            </div>
+            <div class="calc__wrap__right">
+                <div class="calc__wrap__right__inner">
+                    <div class="calc__wrap__right__block">
+                        <div class="form-select">
+                            <div class="calc__wrap__title">Вид ремонта</div>
+                            <select name="" id="">
+                                <option value="0" selected disabled></option>
+                                <option value="1">Без учета черновых материалов</option>
+                                <option value="2">С учетом черновых материалов</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="calc__wrap__right__block">
+                        <div class="calc__wrap__title">Метраж, кв.м: *</div>
+                        <div id="calc3"></div>
+                        <div class="calc__wrap__right__block__footer">
+                            <span>0</span>
+                            <span>200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

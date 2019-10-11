@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('components/component.head.html')
+</head>
+<body>
+    <main>
+        @@include('blocks/block1.html')
+        @@include('blocks/block.form.html', {
+            "title": "Оставьте заявку и получите <br> расчет сметы ",
+            "sub": "С учетом стоимости работ и материалов",
+            "bg": "img",
+            "btn": "Получить расчет сметы",
+            "heading_color": "white"
+        })
+        @@include('blocks/block2.html')
+        @@include('blocks/block3.html')
+        @@include('blocks/calculator.html')
+    </main>
+    @@include('components/component.footer.html')
+</body>
+</html>

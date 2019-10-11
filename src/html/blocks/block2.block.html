@@ -1,0 +1,26 @@
+<div class="block-tw__block">
+    <div class="block-tw__block__inner">
+        <div class="block-tw__block__img">
+            <img src="img/@@img" alt="">
+        </div>
+        <div class="block-tw__block__content">
+            <div class="block-tw__block__content__title">@@title</div>
+            <div class="block-tw__block__content__list">
+                <ul>
+                    @@for(var i = 0; i < list.length; i++) {
+                        <li>`+list[i]+`</li>
+                    }
+                </ul>
+                <div class="block-tw__block__content__list__sm">
+                    <a href="#">Показать еще</a>
+                </div>
+            </div>
+            <div class="block-tw__block__content__price">
+                От <span>@@price</span> &#8381;/м<sup>2</sup>
+            </div>
+        </div>
+        <div class="block-tw__block__btn">
+            <a href="#" class="btn is--bg"><span>Рассчитать смету</span></a>
+        </div>
+    </div>
+</div>

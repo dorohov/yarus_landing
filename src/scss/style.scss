@@ -1,4 +1,5 @@
-// @import "../../img/svg/sprite.scss";
+@import "../../img/svg/sprite.scss";
+@import "jquery-ui";
 @import "vars";
 @import "normalize";
 @import "base";
@@ -7,3 +8,5 @@
 @import "ie";
 @import "footer";
 @import "form";
+@import "site";
+@import "slick";
