@@ -93,10 +93,64 @@
 
 .form-on {
     padding: 100px 0 130px 0;
+    @media (max-width: 1200px) {
+        .heading {
+            br {
+                display: none;
+            }
+        }
+    }
     &.is--img {
         background: url(../../img/form_bg.jpg);
         background-size: cover;
         background-position: center;
+    }
+    &.is--img2 {
+        background: url(../../img/form2_bg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    @media (max-width: 1200px) {
+        .form-fields__block {
+            max-width: 51% !important;
+        }
+    }
+    @media (max-width: 768px) {
+        .form-fields__block {
+            max-width: 100% !important;
+        }
+    }
+}
+
+.form-cop {
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    a {
+        color: #fff;
+        font-weight: 800;
+        transition: .25s all ease;
+        &:hover {
+            color: #B38144;
+        }
+    }
+}
+
+.form-tw {
+    .heading {
+        &__text {
+            font-size: 36px;
+            @media (max-width: 768px) {
+                font-size: 22px;
+                br {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
@@ -131,6 +185,13 @@
                     margin-bottom: 0;
                 }
                 padding-top: 0 !important;
+            }
+        }
+        &-radio {
+            label {
+                &.is--text {
+                    font-size: 16px;
+                }
             }
         }
     }

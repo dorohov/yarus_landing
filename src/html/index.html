@@ -7,15 +7,32 @@
     <main>
         @@include('blocks/block1.html')
         @@include('blocks/block.form.html', {
+            "id": 1,
             "title": "Оставьте заявку и получите <br> расчет сметы ",
             "sub": "С учетом стоимости работ и материалов",
             "bg": "img",
             "btn": "Получить расчет сметы",
-            "heading_color": "white"
+            "heading_color": "white",
+            "cop": false
         })
         @@include('blocks/block2.html')
         @@include('blocks/block3.html')
         @@include('blocks/calculator.html')
+        @@include('blocks/block4.html')
+        @@include('blocks/block5.html')
+        @@include('blocks/block6.html')
+        @@include('blocks/block.form2.html')
+        @@include('blocks/block.form.html', {
+            "id": 2,
+            "title": "Вызовите дизайнера-замерщика",
+            "sub": "И получите полное представление о будущем ремонте <br> еще до его начала, прямо в день обращения",
+            "bg": "img3",
+            "btn": "Вызвать замерщика",
+            "heading_color": "dark",
+            "cop": false
+        })
+        @@include('blocks/block7.html')
+        @@include('blocks/block8.html')
     </main>
     @@include('components/component.footer.html')
 </body>

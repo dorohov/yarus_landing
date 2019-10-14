@@ -62,5 +62,13 @@
 
         $('.block-on__right__items').slick('slickGoTo', 0);
 
+        $('.block-sv__block__title').on('click', function() {
+            var _c = $(this).siblings('.block-sv__block__text')
+            $('.block-sv__block__title').not(this).removeClass('is--open')
+            $('.block-sv__block__text').not(_c).slideUp()
+            var _c = $(_c).slideToggle()
+            $(this).toggleClass('is--open')
+        })
+
     })
 })(jQuery);

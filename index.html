@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ярус</title>
+    <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
@@ -648,13 +649,345 @@
                                 <div class="calc__wrap__title">Метраж, кв.м: *</div>
                                 <div id="calc3"></div>
                                 <div class="calc__wrap__right__block__footer">
-                                    <span>0</span>
+                                    <span class="is--min">0</span>
                                     <span>200</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="calc__price">
+                    <div class="calc__price__heading">Стоимость ремонта:</div>
+                    <div class="calc__price__block">
+                        <div class="calc__price__block__inner"><span>0</span> &#8381;</div>
+                    </div>
+                </div>
+                <div class="calc__btn">
+                    <a href="#" class="btn is--d"><span>Получить расчет сметы бесплатно</span></a>
+                    <a href="#" class="btn is--m"><span>Получить расчет</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="block-fo page">
+            <div class="heading">
+                <div class="heading__text">Команда профессионалов</div>
+            </div>
+            <div class="block-fo__inner container">
+                <div class="block-fo__left">
+                    <img src="img/team.jpg" alt="">
+                </div>
+                <div class="block-fo__right">
+                    <div class="block-fo__right__row">
+                        <div class="block-fo__right__row__heading">У нас огромный опыт.</div>
+                        <div class="block-fo__right__row__text">Вы имеете дело не с компанией-новичком, а с опытным игроком рынка строительных услуг. Помимо строительства, мы имеем внушительно портфолио - мы ежемесячно выполняем комплексный ремонт в среднем от 10 до 20 квартир (и это количество постоянно увеличивается), от эконом до премиум дизайна.</div>
+                    </div>
+                    <div class="block-fo__right__row">
+                        <div class="block-fo__right__row__heading">Мы – команда профессионалов.</div>
+                        <div class="block-fo__right__row__text">В нашей фирме работают более 120 человек, каждый из которых – настоящий специалист своего дела. Наши дизайнеры, инженеры и мастера действуют исключительно опираясь на Ваши пожелания, поэтому Вы получаете ремонт таким, каким Вы его себе и представляли.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-fv page">
+            <div class="heading">
+                <div class="heading__text">Отзывы наших клиентов</div>
+            </div>
+            <div class="block-fv__inner container">
+                <div class="block-fv__carousel">
+                    <div class="block-fv__carousel__items">
+                        <div class="block-fv__block">
+                            <div class="block-fv__block__inner">
+                                <div class="block-fv__block__left">
+                                    <div class="block-fv__block__name">Виталий Валерьевич</div>
+                                    <div class="block-fv__block__title">Дизайн и ремонт двухкомнатной <br> квартиры</div>
+                                    <div class="block-fv__block__desc">Огромная благодарность компании «Ярус». Заказывали дизайнерский ремонт двухкомнатной квартиры. Сделали всё на ура! Сейчас уже полноценно освоили квартиру. От начала ремонта до конца моё участие нетребовалось вообще, заключалось оно только в работе с дизайнером. Сделали все в срок, без хлопот для меня!</div>
+                                    <div class="block-fv__block__footer">
+                                        <div class="block-fv__block__footer__block is--on">
+                                            <div class="block-fv__block__footer__block__heading">Площадь</div>
+                                            <div class="block-fv__block__footer__block__text">72 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="block-fv__block__footer__block is--tw">
+                                            <div class="block-fv__block__footer__block__heading">Срок</div>
+                                            <div class="block-fv__block__footer__block__text">65 дней</div>
+                                        </div>
+                                        <div class="block-fv__block__footer__block is--th">
+                                            <div class="block-fv__block__footer__block__heading">Стоимость</div>
+                                            <div class="block-fv__block__footer__block__text">511 200 &#8381;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-fv__block__right">
+                                    <div class="block-fv__block__right__top">
+                                        <a href="img/r11.jpg" data-fancybox>
+                                            <img src="img/r11.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="block-fv__block__right__bottom">
+                                        <a href="img/r12.jpg" data-fancybox>
+                                            <img src="img/r12.jpg" alt="">
+                                        </a>
+                                        <a href="img/r13.jpg" data-fancybox>
+                                            <img src="img/r13.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-fv__block">
+                            <div class="block-fv__block__inner">
+                                <div class="block-fv__block__left">
+                                    <div class="block-fv__block__name">Виталий Валерьевич</div>
+                                    <div class="block-fv__block__title">Дизайн и ремонт двухкомнатной <br> квартиры</div>
+                                    <div class="block-fv__block__desc">Огромная благодарность компании «Ярус». Заказывали дизайнерский ремонт двухкомнатной квартиры. Сделали всё на ура! Сейчас уже полноценно освоили квартиру. От начала ремонта до конца моё участие нетребовалось вообще, заключалось оно только в работе с дизайнером. Сделали все в срок, без хлопот для меня!</div>
+                                    <div class="block-fv__block__footer">
+                                        <div class="block-fv__block__footer__block is--on">
+                                            <div class="block-fv__block__footer__block__heading">Площадь</div>
+                                            <div class="block-fv__block__footer__block__text">72 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="block-fv__block__footer__block is--tw">
+                                            <div class="block-fv__block__footer__block__heading">Срок</div>
+                                            <div class="block-fv__block__footer__block__text">65 дней</div>
+                                        </div>
+                                        <div class="block-fv__block__footer__block is--th">
+                                            <div class="block-fv__block__footer__block__heading">Стоимость</div>
+                                            <div class="block-fv__block__footer__block__text">511 200 &#8381;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-fv__block__right">
+                                    <div class="block-fv__block__right__top">
+                                        <a href="img/r11.jpg" data-fancybox>
+                                            <img src="img/r11.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="block-fv__block__right__bottom">
+                                        <a href="img/r12.jpg" data-fancybox>
+                                            <img src="img/r12.jpg" alt="">
+                                        </a>
+                                        <a href="img/r13.jpg" data-fancybox>
+                                            <img src="img/r13.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-fv__block">
+                            <div class="block-fv__block__inner">
+                                <div class="block-fv__block__left">
+                                    <div class="block-fv__block__name">Виталий Валерьевич</div>
+                                    <div class="block-fv__block__title">Дизайн и ремонт двухкомнатной <br> квартиры</div>
+                                    <div class="block-fv__block__desc">Огромная благодарность компании «Ярус». Заказывали дизайнерский ремонт двухкомнатной квартиры. Сделали всё на ура! Сейчас уже полноценно освоили квартиру. От начала ремонта до конца моё участие нетребовалось вообще, заключалось оно только в работе с дизайнером. Сделали все в срок, без хлопот для меня!</div>
+                                    <div class="block-fv__block__footer">
+                                        <div class="block-fv__block__footer__block is--on">
+                                            <div class="block-fv__block__footer__block__heading">Площадь</div>
+                                            <div class="block-fv__block__footer__block__text">72 м<sup>2</sup></div>
+                                        </div>
+                                        <div class="block-fv__block__footer__block is--tw">
+                                            <div class="block-fv__block__footer__block__heading">Срок</div>
+                                            <div class="block-fv__block__footer__block__text">65 дней</div>
+                                        </div>
+                                        <div class="block-fv__block__footer__block is--th">
+                                            <div class="block-fv__block__footer__block__heading">Стоимость</div>
+                                            <div class="block-fv__block__footer__block__text">511 200 &#8381;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-fv__block__right">
+                                    <div class="block-fv__block__right__top">
+                                        <a href="img/r11.jpg" data-fancybox>
+                                            <img src="img/r11.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="block-fv__block__right__bottom">
+                                        <a href="img/r12.jpg" data-fancybox>
+                                            <img src="img/r12.jpg" alt="">
+                                        </a>
+                                        <a href="img/r13.jpg" data-fancybox>
+                                            <img src="img/r13.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-fv__carousel__controls">
+                        <button class="is--prev"><img src="img/rews_arrow.svg" alt=""></button>
+                        <button class="is--next"><img src="img/rews_arrow.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-sx page">
+            <div class="block-sx__inner container">
+                <div class="heading">
+                    <div class="heading__text">Мы гарантируем вам</div>
+                </div>
+                <div class="block-sx__list">
+                    <div class="block-sx__block">
+                        <div class="block-sx__block__inner">
+                            <div class="block-sx__block__top">
+                                <img src="img/g1.svg" alt="">
+                            </div>
+                            <div class="block-sx__block__text">Соблюдение сроков <br> выполнения работ</div>
+                        </div>
+                    </div>
+                    <div class="block-sx__block">
+                        <div class="block-sx__block__inner">
+                            <div class="block-sx__block__top">
+                                <img src="img/g2.svg" alt="">
+                            </div>
+                            <div class="block-sx__block__text">Профессиональное <br> качество работы</div>
+                        </div>
+                    </div>
+                    <div class="block-sx__block">
+                        <div class="block-sx__block__inner">
+                            <div class="block-sx__block__top">
+                                <img src="img/g3.svg" alt="">
+                            </div>
+                            <div class="block-sx__block__text">Оптимальную цену <br> на работы</div>
+                        </div>
+                    </div>
+                    <div class="block-sx__block">
+                        <div class="block-sx__block__inner">
+                            <div class="block-sx__block__top">
+                                <img src="img/g4.svg" alt="">
+                            </div>
+                            <div class="block-sx__block__text">Уборку помещений <br> после работ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-on form-tw form is--img2">
+            <div class="form-on__inner container">
+                <div class="heading is--white">
+                    <div class="heading__text">Получите расчет сметы с учетом стоимости <br> работ и материалов через 30 минут</div>
+                </div>
+                <form class="form-fields">
+                    <div class="form-fields__block">
+                        <input type="text" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <div class="form-fields__block is--submit">
+                        <button type="submit" class="btn"><span>Получить расчет сметы</span></button>
+                    </div>
+                </form>
+                <div class="form-cop">
+                    Нажимая кнопку, вы даете согласие <br>
+                    на <a href="#">обработку персональных данных</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-on form is--img3">
+            <div class="form-on__inner container">
+                <div class="heading is--dark">
+                    <div class="heading__text">Вызовите дизайнера-замерщика</div>
+                    <div class="heading__sub">И получите полное представление о будущем ремонте <br> еще до его начала, прямо в день обращения</div>
+                </div>
+                <form class="form-fields">
+                    <div class="form-fields__block">
+                        <input type="number" placeholder="Площадь помещения, м2">
+                    </div>
+                    <div class="form-fields__block">
+                        <input type="text" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <div class="form-fields__block is--submit">
+                        <button type="submit" class="btn"><span>Вызвать замерщика</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="block-sv page">
+            <div class="block-sv__inner container">
+                <div class="heading">
+                    <div class="heading__text">Часто задаваемые вопросы</div>
+                </div>
+                <div class="block-sv__list">
+                    <div class="block-sv__block">
+                        <div class="block-sv__block__inner">
+                            <div class="block-sv__block__title">
+                                <span>Входят ли в стоимость ремонта материалы?</span>
+                                <div class="ac_minus"><svg class="svg-ac_minus-dims svg is--ac_minus">
+                                        <use xlink:href="img/svg/sprites.svg#ac_minus"></use>
+                                    </svg></div>
+                                <div class="ac_plus"><svg class="svg-ac_plus-dims svg is--ac_plus">
+                                        <use xlink:href="img/svg/sprites.svg#ac_plus"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block-sv__block__text">Обычно на следующий день после согласования сметы и заключения договора. Иногда через 1-2 дня, в зависимости от ваших возможностей.</div>
+                        </div>
+                    </div>
+                    <div class="block-sv__block">
+                        <div class="block-sv__block__inner">
+                            <div class="block-sv__block__title">
+                                <span>Как оплачиваются услуги и материалы?</span>
+                                <div class="ac_minus"><svg class="svg-ac_minus-dims svg is--ac_minus">
+                                        <use xlink:href="img/svg/sprites.svg#ac_minus"></use>
+                                    </svg></div>
+                                <div class="ac_plus"><svg class="svg-ac_plus-dims svg is--ac_plus">
+                                        <use xlink:href="img/svg/sprites.svg#ac_plus"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block-sv__block__text">Обычно на следующий день после согласования сметы и заключения договора. Иногда через 1-2 дня, в зависимости от ваших возможностей.</div>
+                        </div>
+                    </div>
+                    <div class="block-sv__block">
+                        <div class="block-sv__block__inner">
+                            <div class="block-sv__block__title">
+                                <span>Когда готовы приступить к работе?</span>
+                                <div class="ac_minus"><svg class="svg-ac_minus-dims svg is--ac_minus">
+                                        <use xlink:href="img/svg/sprites.svg#ac_minus"></use>
+                                    </svg></div>
+                                <div class="ac_plus"><svg class="svg-ac_plus-dims svg is--ac_plus">
+                                        <use xlink:href="img/svg/sprites.svg#ac_plus"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block-sv__block__text">Обычно на следующий день после согласования сметы и заключения договора. Иногда через 1-2 дня, в зависимости от ваших возможностей.</div>
+                        </div>
+                    </div>
+                    <div class="block-sv__block">
+                        <div class="block-sv__block__inner">
+                            <div class="block-sv__block__title">
+                                <span>Нужно ли вывозить мебель из квартиры на время ремонта?</span>
+                                <div class="ac_minus"><svg class="svg-ac_minus-dims svg is--ac_minus">
+                                        <use xlink:href="img/svg/sprites.svg#ac_minus"></use>
+                                    </svg></div>
+                                <div class="ac_plus"><svg class="svg-ac_plus-dims svg is--ac_plus">
+                                        <use xlink:href="img/svg/sprites.svg#ac_plus"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block-sv__block__text">Обычно на следующий день после согласования сметы и заключения договора. Иногда через 1-2 дня, в зависимости от ваших возможностей.</div>
+                        </div>
+                    </div>
+                    <div class="block-sv__block">
+                        <div class="block-sv__block__inner">
+                            <div class="block-sv__block__title">
+                                <span>Можно ли жить во время ремонта в квартире?</span>
+                                <div class="ac_minus"><svg class="svg-ac_minus-dims svg is--ac_minus">
+                                        <use xlink:href="img/svg/sprites.svg#ac_minus"></use>
+                                    </svg></div>
+                                <div class="ac_plus"><svg class="svg-ac_plus-dims svg is--ac_plus">
+                                        <use xlink:href="img/svg/sprites.svg#ac_plus"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block-sv__block__text">Обычно на следующий день после согласования сметы и заключения договора. Иногда через 1-2 дня, в зависимости от ваших возможностей.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-sv__btn">
+                    <a href="#" class="btn"><span>Загрузить еще</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="block-ei">
+            <div class="block-ei__inner">
+                <div class="block-ei__block container">
+                    <div class="block-ei__block__inner">
+                        <div class="heading">
+                            <div class="heading__text">Контакты</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="map"></div>
             </div>
         </div>
     </main>
@@ -665,6 +998,8 @@
     <script src="dist/js/svg4everybody.min.js"></script>
     <script src="dist/js/slick.min.js"></script>
     <script src="dist/js/jquery-ui.min.js"></script>
+    <script src="dist/js/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=01ac61b5-a898-4e5c-bd22-79becf7ab290&amp;width=auto" type="text/javascript"></script>
     <script src="dist/js/main.js"></script>
     <script>
         svg4everybody();
