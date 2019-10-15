@@ -36,7 +36,7 @@
                             </ul>
                         </div>
                         <div class="block-on__left__line__scroll">
-                            <a href="#">
+                            <a href="#main" class="anchor">
                                 <span class="is--line"></span>
                                 <span class="is--text">scroll down</span>
                             </a>
@@ -45,9 +45,11 @@
                     <div class="block-on__left__main">
                         <div class="block-on__left__top">
                             <div class="block-on__left__top__left">
-                                <svg class="svg-logo-dims svg is--logo">
-                                    <use xlink:href="img/svg/sprites.svg#logo"></use>
-                                </svg>
+                                <a href="https://yarus-36.ru/" target="_blank">
+                                    <svg class="svg-logo-dims svg is--logo">
+                                        <use xlink:href="img/svg/sprites.svg#logo"></use>
+                                    </svg>
+                                </a>
                             </div>
                             <div class="block-on__left__top__right">
                                 <div class="block-on__left__top__right__phone">
@@ -121,23 +123,25 @@
                 </div>
             </div>
         </div>
-        <div class="form-on form is--img">
-            <div class="form-on__inner container">
-                <div class="heading is--white">
-                    <div class="heading__text">Оставьте заявку и получите <br> расчет сметы </div>
-                    <div class="heading__sub">С учетом стоимости работ и материалов</div>
+        <div id="main">
+            <div class="form-on form is--img is--sp">
+                <div class="form-on__inner container">
+                    <div class="heading is--white">
+                        <div class="heading__text">Оставьте заявку и получите <br> расчет сметы </div>
+                        <div class="heading__sub">С учетом стоимости работ и материалов</div>
+                    </div>
+                    <form class="form-fields">
+                        <div class="form-fields__block">
+                            <input type="number" placeholder="Площадь помещения, м2" required>
+                        </div>
+                        <div class="form-fields__block">
+                            <input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required>
+                        </div>
+                        <div class="form-fields__block is--submit">
+                            <button type="submit" class="btn"><span>Получить расчет сметы</span></button>
+                        </div>
+                    </form>
                 </div>
-                <form class="form-fields">
-                    <div class="form-fields__block">
-                        <input type="number" placeholder="Площадь помещения, м2">
-                    </div>
-                    <div class="form-fields__block">
-                        <input type="text" placeholder="+7 (___) ___-__-__">
-                    </div>
-                    <div class="form-fields__block is--submit">
-                        <button type="submit" class="btn"><span>Получить расчет сметы</span></button>
-                    </div>
-                </form>
             </div>
         </div>
         <div class="block-tw page">
@@ -617,7 +621,7 @@
                         <div class="calc__wrap__title">Тип жилья</div>
                         <div class="calc__wrap__left__inputs">
                             <div class="calc__wrap__left__inputs__block form-radio">
-                                <input type="radio" name="calc_form1" id="calc_form11" value="calc_form11" checked>
+                                <input type="radio" name="calc_form1" id="calc_form11" value="calc_form11">
                                 <label for="calc_form11" class="is--box"><span></span></label>
                                 <label for="calc_form11" class="is--text">Новостройка</label>
                             </div>
@@ -865,7 +869,7 @@
                 </div>
                 <form class="form-fields">
                     <div class="form-fields__block">
-                        <input type="text" placeholder="+7 (___) ___-__-__">
+                        <input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required>
                     </div>
                     <div class="form-fields__block is--submit">
                         <button type="submit" class="btn"><span>Получить расчет сметы</span></button>
@@ -877,7 +881,7 @@
                 </div>
             </div>
         </div>
-        <div class="form-on form is--img3">
+        <div class="form-on form is--img3 is--sp">
             <div class="form-on__inner container">
                 <div class="heading is--dark">
                     <div class="heading__text">Вызовите дизайнера-замерщика</div>
@@ -885,10 +889,10 @@
                 </div>
                 <form class="form-fields">
                     <div class="form-fields__block">
-                        <input type="number" placeholder="Площадь помещения, м2">
+                        <input type="number" placeholder="Площадь помещения, м2" required>
                     </div>
                     <div class="form-fields__block">
-                        <input type="text" placeholder="+7 (___) ___-__-__">
+                        <input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required>
                     </div>
                     <div class="form-fields__block is--submit">
                         <button type="submit" class="btn"><span>Вызвать замерщика</span></button>
@@ -985,14 +989,140 @@
                         <div class="heading">
                             <div class="heading__text">Контакты</div>
                         </div>
+                        <div class="block-ei__block__list">
+                            <div class="block-ei__block__col">
+                                <div class="block-ei__block__row"><span class="is--marker">г. Воронеж, пер.</span></div>
+                                <div class="block-ei__block__row"><span>Бакунинский 1, оф. 401</span></div>
+                            </div>
+                            <div class="block-ei__block__col">
+                                <div class="block-ei__block__row"><a class="is--phone" href="tel:89208081543">+7 (920) 808-15-43</a></div>
+                                <div class="block-ei__block__row"><a class="is--email" href="mailto:da@yarus-36.ru">da@yarus-36.ru</a></div>
+                            </div>
+                            <div class="block-ei__block__col">
+                                <div class="block-ei__block__row"><span class="is--clock">Пн-Вс</span></div>
+                                <div class="block-ei__block__row"><span>09:00-19:00</span></div>
+                            </div>
+                        </div>
+                        <div class="block-ei__block__btn">
+                            <a href="#" class="btn is--bg"><span>Перезвоните мне</span></a>
+                        </div>
                     </div>
                 </div>
                 <div id="map"></div>
             </div>
         </div>
+        <div class="block-ni page article">
+            <div class="block-ni__inner container">
+                <div class="heading">
+                    <div class="heading__text">Ремонт квартир под ключ <br> в Воронеже</div>
+                </div>
+                <div class="article__cols">
+                    <div class="article__col is--w50">
+                        <p>Ремонт помогает сменить обстановку в квартире или доме, а значит улучшить настроение тех, кто в ней живет. Не секрет, что многих пугает само слово «ремонт».
+                            С нами все иначе!</p>
+                        <p>Все начинается с осмотра помещения, где планируется развернуть ремонтные работы. Для этого на место выезжает наш специалист, который оценивает объект и выясняет какой уровень сложности работ интересует заказчика. Этот выезд абсолютно бесплатный. Во время этого осмотра он делает все необходимые измерения и фотографии. Затем вас приглашают посетить офис нашей компании.</p>
+                        <p>В офисе в ходе беседы со специалистом, отвечающим за проведение ремонта, можно будет решить какие именно материалы лучше всего использовать. Поиском и доставкой необходимых стройматериалов мы занимаемся сами. У нас в офисе есть ряд образцов, которые вы сможете просмотреть и выбрать наиболее подходящие.</p>
+                        <p>Затем составляется договор, обговариваются сроки и общая цена или стоимость проекта. Одно из преимуществ сотрудничества с нами, это то, что у нас есть все необходимые специалисты. Поэтому мы не привлекаем другие организации для осуществления каких-либо видов работ. Мы строго следим за тем, чтобы все делалось
+                            в соответствии с действующими строительными нормами. Поэтому мы с уверенностью даем гарантию на качество выполненного ремонта.</p>
+                    </div>
+                    <div class="article__col is--w50">
+                        <p>Термин "под ключ" подразумевает передачу объекта в эксплуатацию в полностью готовом виде. В нашем случае ремонт квартиры под ключ подразумевает выполнение всех работ и уборку строительного мусора. Это значит что вы можете заехать в свою квартиру в день сдачи ремонта. Ремонт под ключ удобен тем, что вам не нужно отвлекаться на процесс ремонта от своих повседневных обязанностей, работы и даже отдыха за границей. Контроль за ходом выполнения можно вести удаленно, например по WhatsApp - прораб по согласованию будет присылать вам фотографии прогресса выполнения ремонта. Самая главная ценность ремонта под ключ - ваше сэкономленное время.</p>
+                        <p>Второй важный момент ремонта под ключ - все услуги в одном месте (или как любят говорить политики "в редиже одного окна"). Работы с гипсокартоном, монтаж подвесных потолков, электрика, сантехника, кафель, керамогранит, дизайн интерьера, закупка материалов по оптовым ценам, контроль качества выполнения - все эти обязательные вещи вы получаете заключая договор с компанией "Мастера-ремонта" - полный цикл работ и надзор за их качественным выполнением.</p>
+                        <p>Большинство клиентов в нашей компании приходят по рекомендации знакомых, мы дорожим доверием своих клиентов и не можем позволить себе работать никак иначе - только качественно!</p>
+                        <p>Все работы проводятся комплексно и в срок. Дата начала и окончания работ прописываются в Договоре. При необходимости во время проведения ремонта квартиры заказчик получает консультацию по всем видам работ. После выполнения ремонта квартиры мы даём обязательную гарантию на все виды работ: 1 год</p>
+                    </div>
+                </div>
+                <div class="article__heading">Типы ремонта квартир</div>
+                <div class="article__desclist">
+                    <ul>
+                        <li>
+                            <div class="article__desclist__heading">Ремонт эконом класса</div>
+                            <div class="article__desclist__text">Ремонт без особых изысков. Дополнительное выравнивание полов не производится, на базовую бетонную стяжку укладывается обычный линолеум. Шпаклюются стены, откосы, окрашивается потолок, стены оклеиваются бюджетными обоями. Далее устанавливается счетчик электроэнергии с автоматикой, розетки, выключатели, сантехника. Подвешиваются люстры и другие осветительные приборы. Все, разумеется, предоставляет владелец квартиры. В итоге получается рядовой но бюджетный ремонт. С другой стороны, за относительно небольшие деньги вы получите крышу над головой и квартиру, в которую можно въехать сразу же по окончанию ремонта и жить несколько лет, ничего не меняя. Появятся средства и желание – можно будет сделать ремонт более «престижный». В любом случае, все работы будут выполнены на максимально качественном уровне.</div>
+                        </li>
+                        <li>
+                            <div class="article__desclist__heading">Косметический ремонт квартиры</div>
+                            <div class="article__desclist__text">Когда нужно просто обновить стены пол и потолки, то мы предлагаем сделать косметический ремонт. На объекте всё начинается с того, что поверхности очищаются от обоев, краски, плитки и другого старого покрытия. Потом следует зачистка и обработка специальной грунтовкой. После чего стены и потолки покрывают тонким слоем шпаклевки. Если есть необходимость, мы выравниваем пол. Затем проводятся все отделочные работы. Цена услуг такого плана обычно, самая низкая. Она чаще зависит от площади и количества комнат.</div>
+                        </li>
+                        <li>
+                            <div class="article__desclist__heading">Евроремонт квартиры</div>
+                            <div class="article__desclist__text">Если же выясняется, что требуется сделать евроремонт, то первая наша задача добиться того, чтобы в итоге стены, потолки и полы в квартире, офисе или в доме были идеально ровными. Начинается все с создания дизайнерского проекта. Потом составляется архитектурный план работ. На объекте рабочие сначала приступают к демонтажу. Затем следует перепланировка стен, монтаж электрики, сантехники, а также обеспечивается подводка всех необходимых инженерных систем. По завершении этого этапа мы проводим ряд черновых и финишных отделочных работ. Плюс такого ремонта заключается в том, что впоследствии нет сложностей, вызванных неровностью поверхностей при установке дверей
+                                и мебели. Состав услуг в каждом случае будет отличаться. Все это обговаривается еще до окончательного составления сметы и договора. На этом же этапе выясняется точная цена вопроса.</div>
+                        </li>
+                        <li>
+                            <div class="article__desclist__heading">Ремонт квартир в новостройке</div>
+                            <div class="article__desclist__text">Для счастливых обладателей квартир в новостройках, мы предлагаем сделать ремонт с чистого листа под ключ. Все начнется с создания полноценного дизайн-проекта,
+                                в котором учтено зонирование помещений и устройство дополнительных перегородок. Ремонт включает обязательное проектирование и монтаж всех инженерных систем (электроснабжение, канализация, водопровод, вентиляция и кондиционирование). Затем следует выравнивание стен пола и потолков с последующей отделкой
+                                в соответствии с высокими европейскими качественными стандартами</div>
+                        </li>
+                        <li>
+                            <div class="article__desclist__heading">Элитный ремонт квартиры</div>
+                            <div class="article__desclist__text">Также мы делаем элитные ремонты. Тут обязателен индивидуальный подход к каждому клиенту. На начальной стадии всегда продумывается будущий дизайн помещения. Этому этапу мы уделяем особенное внимание, так как стоимость такой работы довольно высока. Затем мы рассказываем заказчику обо всех модных тенденциях и новых отделочных материалах. После этого на основе полученного дизайн-проекта мы составляем детальный план действий, называем сроки, заключаем договора и приступаем к ремонту. Цена тут будет
+                                во многом зависеть от выбранных материалов, а также от сложности дизайнерской идеи.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="article__cols">
+                    <div class="article__col is--w50">
+                        <div class="article__heading">Сколько стоит ремонт квартиры <br> под ключ?</div>
+                        <p>Стоимость ремонта под ключ у нас начинается от 1 500 руб/кв.м. Соответственно косметический ремонт квартиры 50м2 выйдет минимум
+                            в 90 000 руб. Здесь на самом деле множество нюансов (метраж, перечень работ и т.д.), сами понимаете, поэтому окончательную стоимость ремонта конкретно в вашем случае можно сказать после замера и составление сметы. Смета и замер в нашей компании предоставляется бесплатно. Заявку на замер, составление сметы или консультацию можно оставить
+                            на сайте или по телефону: <a href="tel:84862508535">+7 (4862) 50-85-35</a> <br>
+                            Режим работы: <b>с 09:00-19:00 ежедневно.</b></p>
+                    </div>
+                    <div class="article__col is--w50">
+                        <div class="article__heading">Мы выполняем следующие <br> виды работ:</div>
+                        <ul class="article__list">
+                            <li>Разработка эскиза и дизайн-проекта;</li>
+                            <li>Демонтажные работы и установка перегородок;</li>
+                            <li>Черновой и чистовой ремонт квартир в Воронеже;</li>
+                            <li>Установка дверных и оконных конструкций, систем отопления прокладка коммуникаций;</li>
+                            <li>Монтаж натяжных потолков, напольного покрытия и укладка плитки;</li>
+                            <li>Все виды работ с гипсокартоном;</li>
+                            <li>Отделочные работы и вывоз строительного мусора. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
-
+        <div class="footer__inner container">
+            <div class="footer__logo">
+                <a href="https://yarus-36.ru/" target="_blank">
+                    <svg class="svg-logo-dims svg is--logo">
+                        <use xlink:href="img/svg/sprites.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__text">
+                <a href="tel:84862508535">+7 (4862) 50-85-35</a>
+            </div>
+            <div class="footer__text">
+                <a href="mailto:da@yarus-36.ru">da@yarus-36.ru</a>
+            </div>
+            <div class="footer__text">
+                <span>Пн-Вс 09:00-19:00</span>
+            </div>
+            <div class="footer__social">
+                <ul>
+                    <li><a href="#">
+                            <svg class="svg-vk-dims svg is--vk">
+                                <use xlink:href="img/svg/sprites.svg#vk"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#">
+                            <svg class="svg-inst-dims svg is--inst">
+                                <use xlink:href="img/svg/sprites.svg#inst"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#">
+                            <svg class="svg-facebook-dims svg is--facebook">
+                                <use xlink:href="img/svg/sprites.svg#facebook"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script src="dist/js/svg4everybody.min.js"></script>
@@ -1000,10 +1130,44 @@
     <script src="dist/js/jquery-ui.min.js"></script>
     <script src="dist/js/jquery.fancybox.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=01ac61b5-a898-4e5c-bd22-79becf7ab290&amp;width=auto" type="text/javascript"></script>
+    <script src="dist/js/imask.js"></script>
+    <script src="dist/js/parsley.min.js"></script>
+    <script src="dist/js/i18n/ru.js"></script>
+    <script src="dist/js/jquery.modal.min.js"></script>
     <script src="dist/js/main.js"></script>
     <script>
         svg4everybody();
     </script>
+    <div class="modal" id="modal_form">
+        <div class="modal__inner">
+            <a href="#" rel="modal:close" class="is--close"></a>
+            <div class="modal__heading">
+                <div class="modal__heading__text">Получите расчет вашего <br> ремонта</div>
+            </div>
+            <form action="#" class="modal__form form">
+                <div class="form-fields">
+                    <div class="form-fields__block">
+                        <input type="text" placeholder="+7 (___) ___-__-__" required class="input-phone">
+                    </div>
+                    <div class="form-fields__block">
+                        <button class="btn" type="submit"><span>Получить расчет сметы</span></button>
+                    </div>
+                    <div class="form-cop">
+                        Нажимая на кнопку, Вы даете согласие на <a href="#">обработку персональных данных</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="modal_success">
+        <div class="modal__inner">
+            <a href="#" rel="modal:close" class="is--close"></a>
+            <div class="modal__heading">
+                <div class="modal__heading__text">Ваша заявка отправлена!</div>
+                <div class="modal__heading__sub">В ближайшее время с Вами свяжется <br> специалист</div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

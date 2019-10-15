@@ -1,4 +1,32 @@
 <footer class="footer">
-    
+    <div class="footer__inner container">
+        <div class="footer__logo">
+            <a href="https://yarus-36.ru/" target="_blank">
+                @@include('component.svg.html', {"name": "logo"})
+            </a>
+        </div>
+        <div class="footer__text">
+            <a href="tel:84862508535">+7 (4862) 50-85-35</a>
+        </div>
+        <div class="footer__text">
+            <a href="mailto:da@yarus-36.ru">da@yarus-36.ru</a>
+        </div>
+        <div class="footer__text">
+            <span>Пн-Вс 09:00-19:00</span>
+        </div>
+        <div class="footer__social">
+            <ul>
+                <li><a href="#">
+                    @@include('../components/component.svg.html', {"name": "vk"})
+                </a></li>
+                <li><a href="#">
+                    @@include('../components/component.svg.html', {"name": "inst"})
+                </a></li>
+                <li><a href="#">
+                    @@include('../components/component.svg.html', {"name": "facebook"})
+                </a></li>
+            </ul>
+        </div>
+    </div>
 </footer>
 @@include('component.scripts.html')

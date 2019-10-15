@@ -6,15 +6,17 @@
 <body>
     <main>
         @@include('blocks/block1.html')
-        @@include('blocks/block.form.html', {
-            "id": 1,
-            "title": "Оставьте заявку и получите <br> расчет сметы ",
-            "sub": "С учетом стоимости работ и материалов",
-            "bg": "img",
-            "btn": "Получить расчет сметы",
-            "heading_color": "white",
-            "cop": false
-        })
+        <div id="main">
+            @@include('blocks/block.form.html', {
+                "id": 1,
+                "title": "Оставьте заявку и получите <br> расчет сметы ",
+                "sub": "С учетом стоимости работ и материалов",
+                "bg": "img",
+                "btn": "Получить расчет сметы",
+                "heading_color": "white",
+                "cop": false
+            })
+        </div>
         @@include('blocks/block2.html')
         @@include('blocks/block3.html')
         @@include('blocks/calculator.html')
@@ -33,7 +35,9 @@
         })
         @@include('blocks/block7.html')
         @@include('blocks/block8.html')
+        @@include('blocks/block9.html')
     </main>
     @@include('components/component.footer.html')
+    @@include('modals/modal.main.html')
 </body>
 </html>

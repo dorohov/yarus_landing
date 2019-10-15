@@ -8,6 +8,30 @@
             width: 100%;
             padding-left: 15px;
             padding-right: 15px;
+            position: relative;
+            .parsley-errors-list.filled {
+                position: absolute;
+                background: #F0BE0B;
+                color: #fff;
+                padding: 5px 10px;
+                left: 15px;
+                z-index: 999;
+                top: calc(100% + 15px);
+                &::after {
+                    bottom: 100%;
+                    left: 15px;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    border-color: rgba(136, 183, 213, 0);
+                    border-bottom-color: #F0BE0B;
+                    border-width: 10px;
+                    margin-left: -10px;
+                }
+            }
             button {
                 width: 100%;
                 height: 100%;
@@ -101,12 +125,12 @@
         }
     }
     &.is--img {
-        background: url(../../img/form_bg.jpg);
+        background-image: url(../../img/form_bg.jpg);
         background-size: cover;
         background-position: center;
     }
     &.is--img2 {
-        background: url(../../img/form2_bg.jpg);
+        background-image: url(../../img/form2_bg.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -169,6 +193,14 @@
                 &.is--submit {
                     padding-top: 30px;
                     max-width: 100%;
+                }
+            }
+        }
+        &.is--sp {
+            .form-fields__block {
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
                 }
             }
         }
