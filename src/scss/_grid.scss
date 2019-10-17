@@ -83,7 +83,10 @@
     .heading {
         margin-bottom: 40px;
         &__text {
-            font-size: 18px;
+            font-size: 24px;
+            br {
+                display: none;
+            }
         }
         &__sub {
             font-size: 16px;
@@ -91,7 +94,7 @@
         }
     }
     .page {
-        padding: 50px 0;
+        padding: 70px 0;
     }
     .btn {
         padding: 10px 20px;

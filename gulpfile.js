@@ -148,6 +148,7 @@ function createBundleJs() {
                 './dist/js/svg4everybody.min.js',
                 './dist/js/slick.min.js',
                 './dist/js/jquery-ui.min.js',
+                './dist/js/jquery.ui.touch-punch.min.js',
                 './dist/js/jquery.fancybox.min.js',
                 './dist/js/imask.js',
                 './dist/js/parsley.min.js',
